@@ -101,15 +101,50 @@ The Commodore 1540 DOS V2.6 source (1980), 325302-01/325303-01. Extracted from 1
 
 * The source contains both the IEEE-488 and the IEC serial interface code, so it represents both the CBM 2031 and the Commodore 1540. Different `master` source files build different configurations.
 * The power-on message always says "`CBM DOS V2.6 V170`" though, which corresponds to the 1540.
-* The Commodore 1541 is a minimally patched 1540, so this source is very close to the 1541 as well.
 
-## DOS_1571
+## DOS_1541[C]_0{1|2|3|5|6}[_REC]
 
-The Commodore 1571 DOS source (3.0, 1986), updated version (310654-05). Extracted from 1571-source.d81 from Steve Gray's [Dennis Jarvis Page](http://6502.org/users/sjgray/dj/) and converted to LF line breaks.
+The Commodore 1541/1541C/1541-II DOS V2.6 source.
+
+* Directories ending in "`_REC`" have been reconstructed from DOS_1540 and DOS_1571 to match the ROM images. They all match in case and spacing, so they can be used for comparing versions against each other.
+* Directories not ending in "`_REC`" contain original source from [all_new_dos.tar.gz](http://www.zimmers.net/anonftp/pub/cbm/src/drives/all_new_dos.tar.gz) and are lower case.
+
+These are the respective directories:
+
+* DOS_1541_01_REC is 325302-01/901229-01 (1981).
+* DOS_1541_02_REC is 325302-01/901229-02.
+* DOS_1541_03_REC is 325302-01/901229-03.
+* DOS_1541_05[_REC] is 325302-01/901229-05 (1983, shipped with the short board 1541).
+* DOS_1541_06_REC is 325302-01/901229-06.
+* DOS_1541C_01[_REC] is 251968-01 (1984, shipped with the 1541C)
+* DOS_1541C_02[_REC] is 251968-02 (1986, [release notes](http://www.zimmers.net/anonftp/pub/cbm/firmware/drives/new/1541/1541C.251968-02.txt))
+* DOS_1541C_03[_REC] is 251968-03 (shipped with the 1541-II)
+
+## DOS_1551
+
+The Commodore 1551 DOS 2.6 TDISK source (1984), 318008-01. Source: [all_new_dos.tar.gz](http://www.zimmers.net/anonftp/pub/cbm/src/drives/all_new_dos.tar.gz)
+
+## DOS_1570
+
+The Commodore 1570 DOS 3.0 source (1985), 315090-01. Source: [all_new_dos.tar.gz](http://www.zimmers.net/anonftp/pub/cbm/src/drives/all_new_dos.tar.gz)
+
+## DOS_1571{_03|_05|CR}
+
+The Commodore 1571 DOS sources:
+
+* DOS_1571_03 is DOS 3.0 (1985), original version (310654-03).
+* DOS_1571_05 is DOS 3.0 (1986), updated version (310654-05).
+* DOS_1571CR is DOS 3.1 (1986) of the cost-reduced 1571 (318047-01).
+
+Source: [all_new_dos.tar.gz](http://www.zimmers.net/anonftp/pub/cbm/src/drives/all_new_dos.tar.gz); the -03 version was reconstructed from 1571/310654_03/serlib.lst in the dump.
 
 ## DOS_1581
 
-The Commodore 1581 DOS source (10.0, 1987), original version (318045-01). Extracted from 1581-source.d81 from Steve Gray's [Dennis Jarvis Page](http://6502.org/users/sjgray/dj/) and converted to LF line breaks.
+The Commodore 1581 DOS source (10.0, 1987), original version (318045-01). Source: [all_new_dos.tar.gz](http://www.zimmers.net/anonftp/pub/cbm/src/drives/all_new_dos.tar.gz)
+
+## RAMDOS
+
+The C64/C128 RAMDISK DOS V4.3 source (1987). Extracted from [ramdos.zip](http://www.zimmers.net/anonftp/pub/cbm/src/drives/ramdos.zip). This is a version of Commodore DOS running on the C64/C128 for using a REU (RAM Expansion Unit) as a RAM disk.
 
 # Credits
 
